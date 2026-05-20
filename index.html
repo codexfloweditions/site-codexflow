@@ -73,7 +73,7 @@
             box-shadow: 0 4px 8px rgba(255, 84, 17, 0.25);
         }
         
-        /* SECTION CATALOGUE UNIFORMISÉ */
+        /* SECTION CATALOGUE UNIFORMISÉ SANS COUPURE */
         .catalog-section {
             margin-top: 40px;
             border-top: 1px solid #e2e8f0;
@@ -103,10 +103,11 @@
         }
         .book-cover {
             width: 100%;
-            height: 170px; /* Force la même hauteur pour les 3 images */
-            object-fit: cover; /* Recadre proprement sans déformer ni écraser l'image */
+            height: 180px; /* Hauteur stable pour la grille */
+            object-fit: contain; /* Réduit l'image entière pour qu'elle entre sans être coupée */
+            background-color: #f8fafc; /* Un léger fond gris clair pour combler proprement les écarts de formats */
             border-radius: 6px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         .book-name {
             font-size: 0.75rem;
@@ -140,7 +141,7 @@
         <a href="https://ebook.codexflow.net" class="link-btn" target="_blank">Boutique E-books & Numérique</a>
 
         <div class="catalog-section">
-            <div class="catalog-title">Nos Publications</div>
+            <div class="catalog-title">✨ Nos Publications ✨ </div>
             <div class="books-grid">
                 
                 <a href="https://codexflow.sumupstore.com/article/01-livre-la-fracture-du-temps-l-aube-du-secret" class="book-card" target="_blank">
@@ -160,3 +161,11 @@
 
             </div>
         </div>
+
+        <footer>
+            &copy; 2026 CodexFlow Éditions. Tous droits réservés.
+        </footer>
+    </div>
+
+</body>
+</html>
