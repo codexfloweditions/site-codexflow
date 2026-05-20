@@ -73,7 +73,7 @@
             box-shadow: 0 4px 8px rgba(255, 84, 17, 0.25);
         }
         
-        /* SECTION CATALOGUE */
+        /* SECTION CATALOGUE UNIFORMISÉ */
         .catalog-section {
             margin-top: 40px;
             border-top: 1px solid #e2e8f0;
@@ -94,20 +94,24 @@
         .book-card {
             text-decoration: none;
             transition: transform 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .book-card:hover {
             transform: scale(1.05);
         }
         .book-cover {
             width: 100%;
-            height: auto;
+            height: 170px; /* Force la même hauteur pour les 3 images */
+            object-fit: cover; /* Recadre proprement sans déformer ni écraser l'image */
             border-radius: 6px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
         .book-name {
             font-size: 0.75rem;
             color: #475569;
-            margin-top: 6px;
+            margin-top: 8px;
             font-weight: 600;
             line-height: 1.2;
         }
@@ -148,19 +152,3 @@
                     <img src="couverture-souscouverture.jpg" alt="Sous Couverture" class="book-cover">
                     <div class="book-name">Sous Couverture</div>
                 </a>
-
-                <a href="https://codexflow.sumupstore.com/article/briselames-1-avril-26" class="book-card" target="_blank">
-                    <img src="couverture-briselames.jpg" alt="Revue Briselames" class="book-cover">
-                    <div class="book-name">Briselames</div>
-                </a>
-
-            </div>
-        </div>
-
-        <footer>
-            &copy; 2026 CodexFlow Éditions. Tous droits réservés.
-        </footer>
-    </div>
-
-</body>
-</html>
