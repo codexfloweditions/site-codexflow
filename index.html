@@ -6,14 +6,14 @@
     
     <title>CodexFlow Éditions | Maison d'Édition SF, Thriller, Romance, Fantasy</title>
     <meta name="description" content="Bienvenue sur le site officiel de CodexFlow Éditions. Découvrez nos romans de Science-Fiction, Thriller, Romance et Fantasy disponibles en formats papier, e-books et numérique.">
-    <meta name="keywords" content="CodexFlow, CodexFlow Éditions, maison d'édition, roman SF, thriller, romance, fantasy, manga, livre papier, ebook, boutique officielle">
+    <meta name="keywords" content="CodexFlow, CodexFlow Éditions, La Fracture du Temps, Sous Couverture, Briselames, maison d'édition, roman SF, thriller, romance, fantasy, manga, livre papier, ebook">
     <meta name="author" content="CodexFlow Éditions">
     
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ffffff; /* Fond blanc professionnel */
-            color: #1e293b; /* Texte sombre et lisible */
+            background-color: #ffffff;
+            color: #1e293b;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -28,7 +28,7 @@
             text-align: center;
         }
         .logo {
-            max-width: 250px; /* Taille de logo ajustée */
+            max-width: 220px;
             height: auto;
             margin-bottom: 20px;
             border-radius: 8px;
@@ -51,15 +51,15 @@
             color: #475569;
             font-size: 0.95rem;
             line-height: 1.5;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         .link-btn {
             display: block;
-            background-color: #ff5411; /* Orange officiel */
-            color: #ffffff; /* Texte blanc */
+            background-color: #ff5411;
+            color: #ffffff;
             text-decoration: none;
-            padding: 16px 20px;
-            margin-bottom: 16px;
+            padding: 14px 20px;
+            margin-bottom: 12px;
             border-radius: 12px;
             font-weight: 600;
             font-size: 1.05rem;
@@ -68,10 +68,50 @@
             box-shadow: 0 2px 4px rgba(255, 84, 17, 0.15);
         }
         .link-btn:hover {
-            background-color: #ff733b; /* S'éclaircit légèrement au survol */
+            background-color: #ff733b;
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(255, 84, 17, 0.25);
         }
+        
+        /* SECTION CATALOGUE */
+        .catalog-section {
+            margin-top: 40px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 30px;
+        }
+        .catalog-title {
+            font-size: 1.3rem;
+            color: #0f172a;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .book-card {
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+        .book-card:hover {
+            transform: scale(1.05);
+        }
+        .book-cover {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .book-name {
+            font-size: 0.75rem;
+            color: #475569;
+            margin-top: 6px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
         footer {
             margin-top: 40px;
             font-size: 0.85rem;
@@ -94,6 +134,28 @@
         <a href="https://codexflow.substack.com" class="link-btn" target="_blank">Notre Actualité & Veille Littéraire</a>
         <a href="https://shop.codexflow.net" class="link-btn" target="_blank">Notre Boutique Officielle (Livres & Objets)</a>
         <a href="https://ebook.codexflow.net" class="link-btn" target="_blank">Boutique E-books & Numérique</a>
+
+        <div class="catalog-section">
+            <div class="catalog-title">Nos Publications</div>
+            <div class="books-grid">
+                
+                <a href="https://codexflow.sumupstore.com/article/01-livre-la-fracture-du-temps-l-aube-du-secret" class="book-card" target="_blank">
+                    <img src="couverture-fracture.jpg" alt="La Fracture du Temps" class="book-cover">
+                    <div class="book-name">La Fracture du Temps</div>
+                </a>
+
+                <a href="https://codexflow.sumupstore.com/article/02-livre-sous-couverture" class="book-card" target="_blank">
+                    <img src="couverture-souscouverture.jpg" alt="Sous Couverture" class="book-cover">
+                    <div class="book-name">Sous Couverture</div>
+                </a>
+
+                <a href="https://codexflow.sumupstore.com/article/briselames-1-avril-26" class="book-card" target="_blank">
+                    <img src="couverture-briselames.jpg" alt="Revue Briselames" class="book-cover">
+                    <div class="book-name">Briselames</div>
+                </a>
+
+            </div>
+        </div>
 
         <footer>
             &copy; 2026 CodexFlow Éditions. Tous droits réservés.
