@@ -128,6 +128,39 @@
             font-size: 0.85rem;
             color: #94a3b8;
         }
+        /* Style pour intégrer des vidéos proprement */
+.video-section {
+    margin-top: 40px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 30px;
+    width: 100%;
+}
+.video-title {
+    font-size: 1.3rem;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Ratio 16:9 standard */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+        
     </style>
 
     <script type="application/ld+json">
@@ -204,6 +237,30 @@
 
 </div>
         </div>
+
+<!-- SECTION BANDES-ANNONCES -->
+<div class="video-section">
+    <div class="video-title">🎬 Découvrez nos Univers en Vidéo</div>
+    
+    <!-- Conteneur de la Vidéo principale (ex: Le trailer de La Fracture du Temps) -->
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/watch?v=s016MYj7XOk" 
+            title="CodexFlow - Trailer Officiel - La Fracture du Temps : L'Aube du Secret" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+                <iframe 
+            src="https://www.youtube.com/watch?v=AFegrTubR5k" 
+            title="CodexFlow - Trailer Officiel - Sous Couverture" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+
+        
         <div style="margin-top: 30px; padding: 15px; background-color: #f8fafc; border-radius: 12px; font-size: 0.9rem; color: #475569;">
     📍 <strong>Où nous rencontrer ?</strong><br>
     Venez découvrir nos livres papier et échanger avec nous sur nos prochains stands et marchés dans le secteur de Dunkerque !
